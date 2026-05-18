@@ -1,6 +1,6 @@
 ---
-title: "My Dashbord at DACSS"
-bibliography: testVisual.bib
+title: "Massachusetts School Data Dashboard"
+author: "Lafaith Allen-Delice"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -12,37 +12,22 @@ library(flexdashboard) # always
 
 ## Intro {.sidebar}
 
-Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @sievert_flexdashboard_2022.
-
-### References
-<div id="refs"></div>
+This dashboard contains two visualizations based on NCES Massachusetts school data. The first graph is a bar chart displaying the number of schools by locale group. The second graph is a histogram displaying the distribution of student enrollment across Massachusetts schools. The data is from the NCES Massachusetts school excel datasheet.
 
 ## Column {data-width="450"}
 
-### Worst barplot <!-- a title for plot -->
+### Massachusetts Schools by Locale Category
 
 ```{r}
 ## for del1Draft.rds
-#link1=""
-readRDS()
+link1="https://github.com/lallen-student/HW3/raw/main/del1Draft.rds"
+readRDS(url(link1))
 ```
 
-### Worst histogram 
+### Distribution of Student Enrollment in Massachusetts Schools
 
 ```{r}
 ## for del2Draft.rds
-#link2=""
-readRDS()
+link2="https://github.com/lallen-student/HW3/raw/main/del2Draft.rds"
+readRDS(url(link1))
 ```
-
-## Column {data-width="550"}
-
-### Worst scatterplot
-
-```{r}
-## for del3Draft.rds
-#link3=""
-readRDS()
-```
-
-
