@@ -1,6 +1,6 @@
 # HW3
 
-This repository contains my HW4 dashboard using the NCES Massachusetts school excel datasheet.
+This repository contains my HW3 dashboard using the NCES Massachusetts school excel datasheet.
 
 Files
 
