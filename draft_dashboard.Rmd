@@ -29,5 +29,5 @@ readRDS(url(link1))
 ```{r}
 ## for del2Draft.rds
 link2="https://github.com/lallen-student/HW3/raw/main/del2Draft.rds"
-readRDS(url(link1))
+readRDS(url(link2))
 ```

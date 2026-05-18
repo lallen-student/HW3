@@ -58,7 +58,7 @@ totals <- cat_data |>
   group_by(locale_group) |>
   summarize(total = sum(n))
 
-ggplot(cat_data,
+cat_data2 <- ggplot(cat_data,
        aes(x = reorder(locale_group, n),
            y = n,
            fill = size_group)) +
@@ -82,9 +82,11 @@ ggplot(cat_data,
   
   theme_minimal()
 
+cat_data2
+
 # save del1Draft ----------------------------------------------------------
 
-saveRDS(cat_data, file = "del1Draft.rds")
+saveRDS(cat_data2, file = "del1Draft.rds")
 
 # deliverable 2 numerical variable/column --------------------------------
 
@@ -92,7 +94,7 @@ num_data <- mydata |>
   filter(Students != "†",
          Students != "–")
 
-ggplot(num_data,
+num_data2 <- ggplot(num_data,
        aes(x = as.numeric(Students))) +
   
   geom_histogram(
@@ -110,6 +112,8 @@ ggplot(num_data,
   
   theme_minimal()
 
+num_data2
+
 # save del2Draft ----------------------------------------------------------
 
-saveRDS(num_data, file = "del2Draft.rds")
+saveRDS(num_data2, file = "del2Draft.rds")
